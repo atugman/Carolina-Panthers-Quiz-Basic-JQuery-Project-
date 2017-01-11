@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carolina Panthers Quiz</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<!--<div>
+		<iframe class="video" src="https://www.youtube.com/embed/0qlSp6IoGPo?autoplay=1" volume="0">
+		</iframe>
+
+		<!--<img src="http://www.charlotteobserver.com/sports/nfl/carolina-panthers/panther-tracks/jy56zv/picture53504410/ALTERNATES/FREE_960/TAMPA_PANTHERS0103_314">
+
+	</div> -->
+
+<div class="video" id="muteYouTubeVideoPlayer"></div>
+ 
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: '0qlSp6IoGPo', // YouTube Video ID
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 1,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 0         // Hide video controls when playing
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+ </script>
+
+	<section>
+	<div class="main">
+		<div class="open">
+			<h1></h1>
+		</div>
+		<h1></h1>
+		<h2></h2>
+		<div class="choices"></div>
+		<div class="button"></div>
+		<div class="bottom1"></div>
+	</div>
+	<div class="bottom2"></div>
+	</section>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
